@@ -26,8 +26,7 @@ namespace YouConf.Data
         private CloudTableClient GetTableClient()
         {
             // Retrieve the storage account from the connection string.
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(
-               CloudConfigurationManager.GetSetting("StorageConnectionString"));
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageConnectionString"));
 
             // Create the table client.
             return storageAccount.CreateCloudTableClient();

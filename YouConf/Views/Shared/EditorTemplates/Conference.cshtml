@@ -53,8 +53,8 @@
             @Html.LabelWithRequiredAsteriskFor(model => model.StartDate)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.StartDate, "LocalDateTime", new { TimeZoneId = Model.TimeZoneId, Tooltip = "This should be specified in local time for your chosen conference timezone." })
-            @Html.ValidationMessageFor(model => model.StartDate)
+            @Html.EditorFor(model => model.StartDate, "LocalDateTime", new { TimeZoneId = Model.TimeZoneId,  Tooltip = "This should be specified in local time for your chosen conference timezone." })
+            @*@Html.ValidationMessageFor(model => model.StartDate)*@
         </div>
 
         <div class="editor-label">
@@ -62,7 +62,7 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.EndDate, "LocalDateTime", new { TimeZoneId = Model.TimeZoneId, Tooltip = "This should be specified in local time for your chosen conference timezone." })
-            @Html.ValidationMessageFor(model => model.EndDate)
+            @*@Html.ValidationMessageFor(model => model.EndDate)*@
         </div>
 
         <div class="editor-label">
